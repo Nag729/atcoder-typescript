@@ -1,7 +1,7 @@
-const fs = require("fs");
+import * as fs from "fs";
 
-const input = fs.readFileSync("problems/abc143/a/input.txt", "utf8").split(" ");
-// const input = fs.readFileSync("/dev/stdin", "utf8").split(" ");
+// const input = fs.readFileSync("problems/abc143/a/input.txt", "utf8").split(" ");
+const input = fs.readFileSync("/dev/stdin", "utf8").split(" ");
 
 const a = +input[0];
 const b = +input[1];

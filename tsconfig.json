@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es2017",
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "dist",
+    "inlineSourceMap": true,
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es2020", "dom"]
+  },
+  "exclude": ["node_modules"]
+}

@@ -2,10 +2,14 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Compile TypeScript",
-      "type": "typescript",
-      "tsconfig": "tsconfig.json",
-      "problemMatcher": ["$tsc"]
+      "label": "Test_AtCoder_Sample_Case",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "type": "shell",
+      "command": "${workspaceFolder}/cptest.sh",
+      "args": ["${relativeFileDirname}", "${fileBasenameNoExtension}"]
     }
   ]
 }

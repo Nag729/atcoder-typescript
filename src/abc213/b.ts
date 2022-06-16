@@ -1,4 +1,4 @@
-const Main = (input) => {
+export const Main = (input) => {
     const inputList = input.split("\n");
     // const N = parseInt(inputList[0], 10);
     const scoreList: number[] = inputList[1].split(" ").map(Number);

@@ -1,4 +1,4 @@
-const Main = (input) => {
+export const Main = (input) => {
     const inputList = input.split("\n");
     const [H, W, N] = inputList[0].split(" ").map(Number);
     console.log(H, W, N);

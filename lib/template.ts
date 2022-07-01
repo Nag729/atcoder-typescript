@@ -4,4 +4,4 @@ export const Main = (input) => {
     // const B = parseInt(inputList[1], 10);
 };
 
-Main(require("fs").readFileSync("/dev/stdin", "utf8"));
+Main(require("fs").readFileSync("/dev/stdin", "utf8").trim());

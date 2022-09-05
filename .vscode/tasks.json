@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Test_AtCoder_Sample_Case",
+      "label": "Test AtCoder Sample Case",
       "group": {
         "kind": "build",
         "isDefault": true

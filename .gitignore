@@ -133,3 +133,4 @@ dist
 .DS_Store
 output/
 .idea/
+test/

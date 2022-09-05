@@ -1,5 +1,4 @@
-export const Main = (input) => {
-    const inputList = input.split("\n");
+export const Main = (inputList: string[]) => {
     const pList: number[] = inputList[1].split(" ").map((v) => parseInt(v, 10));
 
     let count = 1;
@@ -15,4 +14,4 @@ export const Main = (input) => {
     console.log(count);
 };
 
-Main(require("fs").readFileSync("/dev/stdin", "utf8").trim());
+Main(require("fs").readFileSync("/dev/stdin", "utf8").trim().split("\n"));

@@ -6,6 +6,7 @@ const digitCountList: { digits: number; count: number }[] = [
     { digits: 10, count: 9 * 10 * 10 * 10 * 10 },
 ];
 
+// NOTE: 単純にループ回せばよかった問題
 export const Main = (inputList: string[]) => {
     const strN: string = inputList[0];
 

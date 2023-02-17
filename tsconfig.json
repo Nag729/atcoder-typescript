@@ -2,7 +2,7 @@
   "compilerOptions": {
     "module": "commonjs",
     "moduleResolution": "node",
-    "target": "ES2017",
+    "target": "esnext",
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "outDir": "dist",

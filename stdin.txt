@@ -1,2 +1,7 @@
-10
-o-oooo---o
+6
+a
+abc
+de
+cba
+de
+abc

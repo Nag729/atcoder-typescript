@@ -1,19 +1,16 @@
 export const Main = (inputList: string[]) => {
-    const [strN, strD, strP] = inputList[0].split(" ");
-    const N = parseInt(strN);
-    const D = parseInt(strD);
-    const P = BigInt(strP);
+    const [N, D, P] = inputList[0].split(" ").map((v) => parseInt(v, 10));
 
     const prices = inputList[1]
         .split(" ")
-        .map((v) => BigInt(v))
-        .sort((a, b) => (a > b ? -1 : 1)); // sort desc
+        .map((v) => parseInt(v))
+        .sort((a, b) => b - a); // sort desc
 
-    const normalSumPrice = prices.reduce((acc, cur) => acc + cur, 0n);
+    const normalSumPrice = prices.reduce((acc, cur) => acc + cur, 0);
     let answer = normalSumPrice;
 
     for (let i = 0; i < Math.ceil(N / D); i++) {
-        const normalPrices = prices.slice(i * D, i * D + D).reduce((acc, cur) => acc + cur, 0n);
+        const normalPrices = prices.slice(i * D, i * D + D).reduce((acc, cur) => acc + cur, 0);
         if (normalPrices > P) {
             answer -= normalPrices - P;
         } else {

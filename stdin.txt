@@ -1,5 +1,5 @@
-4 4
-bbed
-abcd
-abed
-fbed
+3 4
+1000 500 700 2000
+xxxo
+ooxx
+oxox

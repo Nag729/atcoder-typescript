@@ -9,10 +9,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ts-node": "^9.1.1"
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
-    "@types/node": "^15.14.9",
-    "typescript": "^4.7.3"
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
+  },
+  "volta": {
+    "node": "22.11.0",
+    "npm": "10.9.0"
   }
 }
